@@ -1,7 +1,7 @@
 # PyHDL
 Using python to do HDL
 
-```
+```python
 from PyHDL import Module, IO
 
 class DFF(Module):
