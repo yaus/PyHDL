@@ -1,7 +1,7 @@
 # PyHDL
 Using python to do HDL
 
-`
+```
 from PyHDL import Module, IO
 
 class DFF(Module):
@@ -13,4 +13,4 @@ class DFF(Module):
   @Edge(clk.rise, rst_n.fall)
   def flop(self):
    
-`
+```
