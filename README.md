@@ -55,19 +55,3 @@ class MUX(Module):
               q=Q[i].conenct) for i in range(8)]
 ```
 
-# Instatiation
-```python
- from PyHDL import Module, IO, Parameter
- 
- class PIPE(Module):
-  width = Parameter(8)
-  clk = IO.input()
-  rst_n = IO.input()
-  D = IO.input(width)
-  Q = IO.output(width)
-  
-  dff = [DFF( clk=clk.connect,
-              rst_n=rst_n.connect,
-              d=D[i].connect,
-              q=Q[i].conenct) for i in range(8)]
-```
